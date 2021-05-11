@@ -4,7 +4,6 @@ import random
 import decimal
 
 # This function finds a random date between 2017 and 2020, thereby including a leap year. 
-
 def get_random_date():
     start = datetime.date(2017, 1, 1)
     end = datetime.date(2020, 12, 31)
@@ -36,9 +35,8 @@ def check_room_for_matches(birthdays):
             if birthdays_copy[0].day == birthdays_copy[i].day:
                 if birthdays_copy[0].month == birthdays_copy[i].month:
                     match = True
-                # print(birthdays_copy[0], birthdays_copy[1])
         birthdays_copy.pop(0)
-    # print(match)
+  
     return match
 
 # This function runs the simulation for a room of N people 
@@ -55,7 +53,8 @@ def chance_by_number_of_runs(N, runs):
             match_true += 1
         else:
             match_false += 1
-    return(match_true/runs)
+
+    return(match_true/runs)# returns chance of finding match
 
 # This function runs the simulation until the desired level of accuracy is reached
 # and then returns the chance of finding a birthday match with that level of accuracy
