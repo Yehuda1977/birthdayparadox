@@ -107,3 +107,23 @@ runs_simulation(23, 5000)
 print('\n2. Inputs are N and the desired accuracy (e.g. 0.001)\n')
 accuracy_simulation(23, .001)
 accuracy_simulation(23, .0001)
+
+################################################################
+# Sample output
+################################################################
+# 1. Inputs are N and the number of runs
+
+# Given N = 23 and the number of runs = 500
+# Given 23 people, the chance of at least two people having the same birthday is: 0.464.
+
+# Given N = 23 and the number of runs = 5000
+# Given 23 people, the chance of at least two people having the same birthday is: 0.5068.
+
+
+# 2. Inputs are N and the desired accuracy (e.g. 0.001)
+
+# Given N = 23 and the desired accuracy = 0.001
+# Given 23 people, the chance of at least two people having the same birthday is: 0.625.
+
+# Given N = 23 and the desired accuracy = 0.0001
+# Given 23 people, the chance of at least two people having the same birthday is: 0.4375.
