@@ -1,5 +1,4 @@
 import datetime
-from datetime import datetime as d
 import random
 import decimal
 
