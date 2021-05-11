@@ -26,7 +26,7 @@ def create_room_of_people(N):
 def check_room_for_matches(birthdays):
     match = False
     # create copy of list
-    birthdays_copy = birthdays
+    birthdays_copy = birthdays.copy()
     # Runs through all possible comparisons--N + N-1 + N-2... to find match
     # For example, if N is 23 there will be 253 comparisons/chances of finding a matching birthday
     while len(birthdays_copy) > 1 :
